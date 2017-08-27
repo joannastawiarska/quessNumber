@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Zgadnij liczbę!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+body {
+	background-color: #DBE3DE;
+}
+
+a {
+	font-family: Courier New;
+	font-size: 13px;
+}
+
+input {
+	font-family: Courier New;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+
+p {
+	font-family: Courier New;
+	font-size: 13px;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: Georgia;
+	text-shadow: 2px 2px #ffffff;
+	font-style: italic;
+}
+</style>
+</head>
+
+
+<body>
+	<center>
+		<h1>Zgadnij liczbę!</h1>
+		<p>Wprowadź liczbę, a następnie odczytaj informację o wielkości
+			wprowadzonej liczby :)</p>
+
+		<form action="numquess/quess" method="GET">
+			<input type="text" name="number"></input><br /> <input type="submit"
+				value="Sprawdź" name="Submit" />
+		</form>
+	</center>
+</body>
+</html>

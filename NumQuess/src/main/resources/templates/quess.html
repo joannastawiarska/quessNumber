@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Zgadnij liczbę!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+body {
+	background-color: #DBE3DE;
+}
+
+a {
+	color: black; font-family : Courier New;
+	font-size: 13px;
+	font-family: Courier New;
+}
+
+input {
+	font-family: Courier New;
+	font-size: 12px;
+	background-color: #e7e7e7;
+}
+
+p {
+	font-size: 15px;
+	font-family: Georgia;
+	text-shadow: 1px 1px #ffffff;
+	font-style: italic;
+}
+</style>
+</head>
+<body>
+	<center>
+		<p>
+			<u>Wprowadzona liczba to:</u>
+		</p>
+		<p th:text="${number}" />
+		<p th:text="${message}" />
+
+		<a href="/numquess"> Spróbuj wprowadzić liczbę ponownie </a>
+	</center>
+</body>
+</html>
